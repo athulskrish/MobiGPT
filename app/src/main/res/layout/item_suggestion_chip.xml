@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chip_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="1dp"
+    app:strokeColor="?attr/borderColor"
+    app:strokeWidth="1dp"
+    app:cardBackgroundColor="?attr/surfaceColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/chip_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:tint="?attr/colorPrimary"
+            android:contentDescription="Chip icon" />
+
+        <TextView
+            android:id="@+id/chip_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12.5sp"
+            android:textColor="?attr/textColorPrimary"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:lineSpacingExtra="1dp"
+            android:text="Suggestion" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

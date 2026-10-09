@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Internal storage files directory for exports only -->
+    <files-path 
+        name="exports" 
+        path="exports/" />
+    <!-- Legacy downloads directory for API 27/28 exports -->
+    <external-path
+        name="external_download"
+        path="Download" />
+</paths>

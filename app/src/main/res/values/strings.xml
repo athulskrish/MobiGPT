@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">MobiGPT</string>
+    <string name="chat_history">Chat History</string>
+    <string name="type_message_hint">Type a message&#8230;</string>
+    <string name="start_conversation">Start a new conversation</string>
+    <string name="type_message_below">Type a message below to begin</string>
+    
+    <!-- Onboarding strings -->
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="get_started">Get Started</string>
+    <string name="onboarding_image">Onboarding illustration</string>
+    
+    <!-- Export strings -->
+    <string name="export_conversation">Export Conversation</string>
+    <string name="export_as_markdown">Export as Markdown</string>
+    <string name="export_as_pdf">Export as PDF</string>
+    <string name="share_conversation">Share Conversation</string>
+    <string name="export_successful">Conversation exported successfully</string>
+    <string name="export_failed">Failed to export conversation</string>
+    <string name="no_conversation_to_export">No conversation to export. Start a chat first!</string>
+    <string name="choose_export_format">Choose Export Format</string>
+    <string name="exporting">Exporting conversation&#8230;</string>
+    
+    <!-- Settings strings -->
+    <string name="settings">Settings</string>
+    
+    <!-- Delete period arrays -->
+    <string-array name="delete_period_entries">
+        <item>7 days</item>
+        <item>30 days</item>
+        <item>90 days</item>
+        <item>180 days</item>
+        <item>1 year</item>
+    </string-array>
+    <string-array name="delete_period_values">
+        <item>7</item>
+        <item>30</item>
+        <item>90</item>
+        <item>180</item>
+        <item>365</item>
+    </string-array>
+    
+    <!-- Theme arrays -->
+    <string-array name="theme_entries">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>System default</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>system</item>
+    </string-array>
+    
+    <!-- Accent color arrays -->
+    <string-array name="accent_color_entries">
+        <item>Green (Default)</item>
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Orange</item>
+        <item>Pink</item>
+    </string-array>
+    <string-array name="accent_color_values">
+        <item>green</item>
+        <item>blue</item>
+        <item>purple</item>
+        <item>orange</item>
+        <item>pink</item>
+    </string-array>
+    
+    <!-- Font size arrays -->
+    <string-array name="font_size_entries">
+        <item>Small</item>
+        <item>Medium (Default)</item>
+        <item>Large</item>
+        <item>Extra Large</item>
+    </string-array>
+    <string-array name="font_size_values">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>xlarge</item>
+    </string-array>
+    
+    <!-- Font family arrays -->
+    <string-array name="font_family_entries">
+        <item>System default</item>
+        <item>Roboto</item>
+        <item>Sans Serif</item>
+        <item>Serif</item>
+    </string-array>
+    <string-array name="font_family_values">
+        <item>system</item>
+        <item>roboto</item>
+        <item>sans-serif</item>
+        <item>serif</item>
+    </string-array>
+    
+
+    
+    <!-- Lock type arrays -->
+    <string-array name="lock_type_entries">
+        <item>Biometric (Fingerprint/Face)</item>
+        <item>PIN</item>
+    </string-array>
+    <string-array name="lock_type_values">
+        <item>biometric</item>
+        <item>pin</item>
+    </string-array>
+    
+    <!-- Lock timeout arrays -->
+    <string-array name="lock_timeout_entries">
+        <item>Immediately</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+    <string-array name="lock_timeout_values">
+        <item>0</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>900</item>
+        <item>1800</item>
+    </string-array>
+    
+
+    
+    <!-- Search strings -->
+    <string name="search_history_icon">Search history icon</string>
+
+    <!-- Action strings -->
+    <string name="action_copy">Copy</string>
+    <string name="action_star">Star</string>
+    <string name="action_regenerate">Regenerate</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_share">Share</string>
+    <string name="action_select_multiple">Select Multiple</string>
+
+    <!-- Lock screen strings -->
+    <string name="lock_icon">Lock icon</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="enter_pin_to_unlock">Enter your PIN to unlock</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="unlock">Unlock</string>
+    <string name="use_biometric">Use Biometric</string>
+
+    <!-- Starred messages strings -->
+    <string name="no_starred_messages_desc">No starred messages</string>
+    <string name="no_starred_messages_title">No Starred Messages</string>
+    <string name="no_starred_messages_hint">Tap the star button next to messages\nto save them here for quick access.</string>
+    <string name="action_unstar_all">Unstar All</string>
+    <string name="unstar_all_dialog_title">Unstar All Messages</string>
+    <string name="unstar_all_dialog_message">Are you sure you want to unstar all starred messages?</string>
+
+    <!-- Model card strings -->
+    <string name="model_icon">Model icon</string>
+    <string name="download_delete_model">Download/Delete Model</string>
+    <string name="download_from_url_icon">Download from URL icon</string>
+    <string name="download_from_url_ellipsis">Download from URL&#8230;</string>
+    <string name="download_custom_gguf_model">Download a custom GGUF model</string>
+    <string name="arrow_icon">Arrow icon</string>
+
+    <!-- User message item strings -->
+    <string name="selected">Selected</string>
+    <string name="user_message">User message</string>
+    <string name="starred_message">Starred message</string>
+    <string name="message_timestamp">Message timestamp</string>
+    <string name="star_message">Star message</string>
+
+    <!-- Custom download dialog strings -->
+    <string name="download_icon">Download icon</string>
+    <string name="download_model_from_url">Download Model from URL</string>
+    <string name="download_custom_gguf_desc">Download custom GGUF models from Hugging Face or other sources.</string>
+    <string name="browse_huggingface_models">🔍 Browse Hugging Face Models</string>
+    <string name="or_divider">OR</string>
+    <string name="model_name_hint">Model Name</string>
+    <string name="download_url_hint">Download URL</string>
+    <string name="important_information">ℹ️ Important Information</string>
+    <string name="custom_download_info_text">• File will be saved as \'&lt;name&gt;.gguf\'\n• Duplicates will be numbered automatically\n• File size determined from server\n• Ensure sufficient storage space</string>
+    <string name="custom_download_example_url">Example: https://huggingface.co/user/model/resolve/main/model.gguf</string>
+</resources>

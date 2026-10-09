@@ -1,0 +1,228 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MobiGPT" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Default green accent color scheme -->
+        <item name="colorPrimary">@color/accent_green</item>
+        <item name="colorPrimaryVariant">@color/accent_green_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/accent_green_light</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorSecondaryContainer">@color/bottom_nav_indicator</item>
+        <item name="colorOnSecondaryContainer">@color/accent_green_dark</item>
+        
+        <!-- Custom semantic colors for light theme -->
+        <item name="userMessageBackground">@color/user_message_bg_light</item>
+        <item name="aiMessageBackground">@color/ai_message_bg_light</item>
+        <item name="messageInputBackground">@color/message_input_bg_light</item>
+        <item name="chatBackground">@color/chat_bg_light</item>
+        <item name="surfaceColor">@color/surface_light</item>
+        <item name="textColorPrimary">@color/text_primary_light</item>
+        <item name="textColorSecondary">@color/text_secondary_light</item>
+        <item name="borderColor">@color/border_light</item>
+        <item name="dividerColor">@color/border_light</item>
+        <item name="spinnerBackground">@color/spinner_bg_light</item>
+        <item name="downloadProgressBackground">@color/download_progress_bg_light</item>
+        
+        <!-- System Bar Theming -->
+        <item name="android:statusBarColor">@color/surface_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/surface_light</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        
+        <!-- Material3 light theme explicit mappings -->
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/text_primary_light</item>
+        
+        <!-- Popup and overflow menu styling for light theme -->
+        <item name="popupMenuStyle">@style/Widget.App.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.App.PopupMenu.Overflow</item>
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance.App.Menu</item>
+        
+        <!-- Preference styling -->
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.Material3</item>
+    </style>
+
+    <style name="Theme.MobiGPT" parent="Base.Theme.MobiGPT" />
+    
+    <!-- Blue Accent Theme -->
+    <style name="Theme.MobiGPT.Blue" parent="Base.Theme.MobiGPT">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorPrimaryVariant">@color/accent_blue_dark</item>
+        <item name="colorSecondary">@color/accent_blue_light</item>
+    </style>
+    
+    <!-- Purple Accent Theme -->
+    <style name="Theme.MobiGPT.Purple" parent="Base.Theme.MobiGPT">
+        <item name="colorPrimary">@color/accent_purple</item>
+        <item name="colorPrimaryVariant">@color/accent_purple_dark</item>
+        <item name="colorSecondary">@color/accent_purple_light</item>
+    </style>
+    
+    <!-- Orange Accent Theme -->
+    <style name="Theme.MobiGPT.Orange" parent="Base.Theme.MobiGPT">
+        <item name="colorPrimary">@color/accent_orange_primary</item>
+        <item name="colorPrimaryVariant">@color/accent_orange_dark</item>
+        <item name="colorSecondary">@color/accent_orange_light</item>
+    </style>
+    
+    <!-- Pink Accent Theme -->
+    <style name="Theme.MobiGPT.Pink" parent="Base.Theme.MobiGPT">
+        <item name="colorPrimary">@color/accent_pink_primary</item>
+        <item name="colorPrimaryVariant">@color/accent_pink_dark</item>
+        <item name="colorSecondary">@color/accent_pink_light</item>
+    </style>
+    
+    <!-- OLED Black Themes -->
+    <style name="Theme.MobiGPT.OLED" parent="Base.Theme.MobiGPT">
+        <item name="android:colorBackground">@color/oled_black</item>
+        <item name="colorSurface">@color/oled_surface</item>
+        <item name="colorOnSurface">@color/oled_text_primary</item>
+        <item name="chatBackground">@color/oled_black</item>
+        <item name="aiMessageBackground">@color/oled_ai_message_bg</item>
+        <item name="messageInputBackground">@color/oled_message_input_bg</item>
+        <item name="surfaceColor">@color/oled_surface</item>
+        <item name="textColorPrimary">@color/oled_text_primary</item>
+        <item name="textColorSecondary">@color/oled_text_secondary</item>
+        <item name="borderColor">@color/oled_border</item>
+        <item name="dividerColor">@color/oled_border</item>
+        <item name="spinnerBackground">@color/oled_surface</item>
+        <item name="downloadProgressBackground">@color/oled_surface_elevated</item>
+        <item name="android:statusBarColor">@color/oled_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/oled_black</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    
+    <!-- OLED Green Theme -->
+    <style name="Theme.MobiGPT.OLED.Green" parent="Theme.MobiGPT.OLED">
+        <item name="colorPrimary">@color/accent_green</item>
+        <item name="colorPrimaryVariant">@color/accent_green_dark</item>
+        <item name="colorSecondary">@color/accent_green_light</item>
+        <item name="userMessageBackground">@color/oled_user_message_bg</item>
+    </style>
+    
+    <!-- OLED Blue Theme -->
+    <style name="Theme.MobiGPT.OLED.Blue" parent="Theme.MobiGPT.OLED">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorPrimaryVariant">@color/accent_blue_dark</item>
+        <item name="colorSecondary">@color/accent_blue_light</item>
+        <item name="userMessageBackground">@color/accent_blue_dark</item>
+    </style>
+    
+    <!-- OLED Purple Theme -->
+    <style name="Theme.MobiGPT.OLED.Purple" parent="Theme.MobiGPT.OLED">
+        <item name="colorPrimary">@color/accent_purple</item>
+        <item name="colorPrimaryVariant">@color/accent_purple_dark</item>
+        <item name="colorSecondary">@color/accent_purple_light</item>
+        <item name="userMessageBackground">@color/accent_purple_dark</item>
+    </style>
+    
+    <!-- OLED Orange Theme -->
+    <style name="Theme.MobiGPT.OLED.Orange" parent="Theme.MobiGPT.OLED">
+        <item name="colorPrimary">@color/accent_orange_primary</item>
+        <item name="colorPrimaryVariant">@color/accent_orange_dark</item>
+        <item name="colorSecondary">@color/accent_orange_light</item>
+        <item name="userMessageBackground">@color/accent_orange_dark</item>
+    </style>
+    
+    <!-- OLED Pink Theme -->
+    <style name="Theme.MobiGPT.OLED.Pink" parent="Theme.MobiGPT.OLED">
+        <item name="colorPrimary">@color/accent_pink_primary</item>
+        <item name="colorPrimaryVariant">@color/accent_pink_dark</item>
+        <item name="colorSecondary">@color/accent_pink_light</item>
+        <item name="userMessageBackground">@color/accent_pink_dark</item>
+    </style>
+
+    <!-- Enhanced Toolbar Title Style -->
+    <style name="ToolbarTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Preference Theme Overlay -->
+    <style name="PreferenceThemeOverlay.Material3" parent="PreferenceThemeOverlay.v14.Material">
+        <item name="preferenceStyle">@style/Preference.Material3</item>
+        <item name="switchPreferenceCompatStyle">@style/Preference.SwitchPreferenceCompat.Material3</item>
+        <item name="preferenceCategoryStyle">@style/Preference.Category.Material3</item>
+        <item name="dialogPreferenceStyle">@style/Preference.Material3</item>
+        <item name="seekBarPreferenceStyle">@style/Preference.SeekBarPreference.Material3</item>
+        <item name="editTextPreferenceStyle">@style/Preference.Material3</item>
+        <item name="checkBoxPreferenceStyle">@style/Preference.Material3</item>
+        <item name="dropdownPreferenceStyle">@style/Preference.Material3</item>
+    </style>
+
+    <!-- Material 3 Preference Style -->
+    <style name="Preference.Material3" parent="Preference.Material">
+        <item name="android:layout">@layout/preference_material_custom</item>
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="iconSpaceReserved">true</item>
+    </style>
+
+    <!-- Material 3 Switch Preference Style -->
+    <style name="Preference.SwitchPreferenceCompat.Material3" parent="Preference.SwitchPreferenceCompat.Material">
+        <item name="android:layout">@layout/preference_material_custom</item>
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="iconSpaceReserved">true</item>
+    </style>
+
+    <!-- Material 3 Category Style -->
+    <style name="Preference.Category.Material3" parent="Preference.Category.Material">
+        <item name="android:layout">@layout/preference_category_material_custom</item>
+        <item name="allowDividerAbove">true</item>
+        <item name="allowDividerBelow">false</item>
+    </style>
+
+    <!-- Material 3 SeekBarPreference Style -->
+    <style name="Preference.SeekBarPreference.Material3" parent="Preference.SeekBarPreference.Material">
+        <item name="android:layout">@layout/preference_seekbar_material_custom</item>
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="iconSpaceReserved">true</item>
+    </style>
+
+
+    
+    <!-- Settings Text Styles for smooth transitions -->
+    <style name="SettingsTitle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    
+    <style name="SettingsSummary" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    
+    <style name="SettingsCategory" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- Popup Menu Styles for consistent text visibility and Material 3 design -->
+    <style name="Widget.App.PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
+    </style>
+
+    <style name="Widget.App.PopupMenu.Overflow" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
+    </style>
+    
+    <!-- Menu Text Appearance for theme-aware text color -->
+    <style name="TextAppearance.App.Menu" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

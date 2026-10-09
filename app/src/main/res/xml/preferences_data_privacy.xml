@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        android:title="📤 Export &amp; Backup"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="export_all_chats"
+            android:title="Export All Chats"
+            android:summary="Export your entire chat history"
+            android:icon="@drawable/ic_export"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="🔒 Privacy"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="privacy_policy"
+            android:title="Privacy Policy"
+            android:summary="Read how we protect your data"
+            android:icon="@drawable/ic_document"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="🗑️ Data Management"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="clear_chat_history"
+            android:title="Clear Chat History"
+            android:summary="Delete all conversations permanently"
+            android:icon="@drawable/ic_delete"
+            app:iconSpaceReserved="true" />
+
+        <Preference
+            android:key="clear_starred_messages"
+            android:title="Clear Starred Messages"
+            android:summary="Remove all bookmarked messages"
+            android:icon="@drawable/ic_star"
+            app:iconSpaceReserved="true" />
+
+        <Preference
+            android:key="clear_all_data"
+            android:title="Clear All Data"
+            android:summary="Delete all app data and reset to defaults"
+            android:icon="@drawable/ic_delete_forever"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

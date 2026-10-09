@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="?attr/messageInputBackground" />
+    <corners android:radius="24dp" />
+    <stroke android:width="1.5dp" android:color="?attr/borderColor" />
+    <padding
+        android:left="4dp"
+        android:right="4dp"
+        android:top="2dp"
+        android:bottom="2dp" />
+</shape>

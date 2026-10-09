@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Circular background -->
+    <path
+        android:fillColor="#F3E5F5"
+        android:pathData="M60,20 A40,40 0 1,1 60,100 A40,40 0 1,1 60,20 Z"/>
+    
+    <!-- Performance bars - showing different model sizes -->
+    <!-- Small model bar -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M35,70 L45,70 Q47,70 47,68 L47,55 Q47,53 45,53 L35,53 Q33,53 33,55 L33,68 Q33,70 35,70 Z"/>
+    
+    <!-- Medium model bar -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M52,70 L62,70 Q64,70 64,68 L64,45 Q64,43 62,43 L52,43 Q50,43 50,45 L50,68 Q50,70 52,70 Z"/>
+    
+    <!-- Large model bar -->
+    <path
+        android:fillColor="#9575CD"
+        android:pathData="M69,70 L79,70 Q81,70 81,68 L81,35 Q81,33 79,33 L69,33 Q67,33 67,35 L67,68 Q67,70 69,70 Z"/>
+    
+    <!-- Base line -->
+    <path
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M28,75 L86,75"/>
+    
+    <!-- Lightning bolt for performance -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M92,25 L88,40 L94,40 L86,60 L90,45 L84,45 Z"/>
+    
+    <!-- Checkmark for optimization -->
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M20,50 L25,55 L32,45"/>
+</vector>

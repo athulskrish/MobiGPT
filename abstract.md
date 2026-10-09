@@ -1,0 +1,3 @@
+# Abstract for MobiGPT
+
+MobiGPT is a privacy-focused, offline AI chat application for Android, built with llama.cpp for local inference. It supports 100% on-device processing, multi-threading for 3-6x faster responses, and features like streaming chat, smart UI with auto-scroll, model management, and customizable themes. Designed for Android 8.1+, it optimizes performance based on device hardware, battery, and thermal conditions, making it ideal for secure, efficient AI interactions without internet dependency. Key technologies include Java/Kotlin, Room database, and Material Design, with a focus on user privacy and ease of use.

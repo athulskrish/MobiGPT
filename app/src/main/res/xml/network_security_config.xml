@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 
+        Network Security Configuration for MobiGPT
+        This ensures proper SSL/TLS certificate validation and prevents MITM attacks
+        
+        Security Features:
+        1. Cleartext traffic (HTTP) is completely blocked
+        2. Only HTTPS connections are allowed
+        3. Certificate pinning for Hugging Face domains
+        4. Backup pins for certificate rotation
+        5. Pin expiration to force regular updates
+    -->
+    
+    <!-- Base configuration for all domains - Strict security -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust only system certificate authorities -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    
+    <!-- 
+        Certificate Pinning for Hugging Face
+        Prevents MITM attacks by validating certificate public key pins
+        
+        These pins are for DigiCert Global Root G2 (used by Hugging Face)
+        Updated: October 2025
+        Expiration: December 2026 (review and update before expiration)
+    -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">huggingface.co</domain>
+        <pin-set expiration="2027-12-31">
+            <!-- Hugging Face Certificate Chain - Actual Pins (Extracted October 2025) -->
+            <pin digest="SHA-256">moNGIzqnfoKhb+Rzb6a5I1MxbqFnRMewzIzpr6UVLs0=</pin>
+            <pin digest="SHA-256">18tkPyr2nckv4fgo0dhAkaUtJ2hu2831xlO2SKhq8dg=</pin>
+            <pin digest="SHA-256">++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI=</pin>
+        </pin-set>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+    
+    <!-- 
+        Debug overrides (ONLY for development/testing)
+        Allows testing with self-signed certificates in debug builds
+        This section is automatically ignored in release builds
+    -->
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="system" />
+            <!-- User certificates for testing ONLY - not used in production -->
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>

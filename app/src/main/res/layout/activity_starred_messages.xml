@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/starred_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/chatBackground">
+
+    <!-- Modern App Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/surfaceColor"
+        android:elevation="0dp"
+        app:titleTextColor="?attr/textColorPrimary"
+        app:subtitleTextColor="?attr/textColorSecondary"
+        app:navigationIconTint="?attr/textColorPrimary" />
+
+    <!-- Subtle Hairline Toolbar Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/dividerColor" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_starred_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/chatBackground"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp"
+            android:clipToPadding="false" />
+
+        <!-- Modern Empty State -->
+        <LinearLayout
+            android:id="@+id/empty_state_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="36dp"
+            android:visibility="gone">
+
+            <!-- Star icon with circular background -->
+            <FrameLayout
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/star_icon_background_large">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_star_filled"
+                    app:tint="@color/star_color"
+                    android:alpha="0.85"
+                    android:contentDescription="@string/no_starred_messages_desc" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="No Starred Messages"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/empty_state_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tap the star icon on any AI response or message to bookmark key answers with full question context."
+                android:textAlignment="center"
+                android:textColor="?attr/textColorSecondary"
+                android:textSize="13.5sp"
+                android:lineSpacingExtra="3dp"
+                android:alpha="0.85" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

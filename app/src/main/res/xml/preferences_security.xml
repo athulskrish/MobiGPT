@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        android:title="🔐 App Security"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="app_lock_enabled"
+            android:title="App Lock"
+            android:summary="Require authentication to open the app"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_lock"
+            app:iconSpaceReserved="true" />
+
+        <ListPreference
+            android:key="lock_type"
+            android:title="Lock Type"
+            android:summary="%s"
+            android:entries="@array/lock_type_entries"
+            android:entryValues="@array/lock_type_values"
+            android:defaultValue="biometric"
+            android:icon="@drawable/ic_lock"
+            android:dependency="app_lock_enabled"
+            app:iconSpaceReserved="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:key="lock_timeout"
+            android:title="Auto-lock Timeout"
+            android:summary="%s"
+            android:entries="@array/lock_timeout_entries"
+            android:entryValues="@array/lock_timeout_values"
+            android:defaultValue="300"
+            android:icon="@drawable/ic_lock"
+            android:dependency="app_lock_enabled"
+            app:iconSpaceReserved="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            android:key="lock_on_app_switch"
+            android:title="Lock on App Switch"
+            android:summary="Require authentication when switching apps"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_device"
+            android:dependency="app_lock_enabled"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory 
+        android:title="️ Data Protection"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="require_auth_export"
+            android:title="Authenticate for Export"
+            android:summary="Require authentication when exporting data"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_fingerprint"
+            app:iconSpaceReserved="true" />
+
+        <Preference
+            android:key="reset_security"
+            android:title="Reset Security Settings"
+            android:summary="Clear all security configurations"
+            android:icon="@drawable/ic_reset"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

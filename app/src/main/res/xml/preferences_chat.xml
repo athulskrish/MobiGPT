@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        android:title="💾 Message Management"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="delete_old_messages"
+            android:title="Auto-delete Old Messages"
+            android:summary="Automatically remove messages after a specified period"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_delete"
+            app:iconSpaceReserved="true" />
+
+        <ListPreference
+            android:key="delete_messages_after"
+            android:title="Delete Messages After"
+            android:summary="%s"
+            android:entries="@array/delete_period_entries"
+            android:entryValues="@array/delete_period_values"
+            android:defaultValue="90"
+            android:icon="@drawable/ic_history"
+            android:dependency="delete_old_messages"
+            app:iconSpaceReserved="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            android:key="delete_old_messages_now"
+            android:title="Delete Old Messages Now"
+            android:summary="Manually trigger deletion of old messages (starred messages preserved)"
+            android:icon="@drawable/ic_delete"
+            android:dependency="delete_old_messages"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="🔍 Smart Features"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="message_search_history"
+            android:title="Search History"
+            android:summary="Keep history of your message searches"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_search"
+            app:iconSpaceReserved="true" />
+
+        <Preference
+            android:key="clear_search_history"
+            android:title="Clear Search History"
+            android:summary="Remove all saved search queries"
+            android:icon="@drawable/ic_delete"
+            android:dependency="message_search_history"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="⚡ Behavior"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="timestamp_messages"
+            android:title="Show Timestamps"
+            android:summary="Display time for each message"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_history"
+            app:iconSpaceReserved="true" />
+
+        <SwitchPreferenceCompat
+            android:key="auto_scroll_new_messages"
+            android:title="Auto-scroll to New Messages"
+            android:summary="Automatically scroll when new message arrives"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_chat"
+            app:iconSpaceReserved="true" />
+
+        <SwitchPreferenceCompat
+            android:key="haptic_feedback"
+            android:title="Haptic Feedback"
+            android:summary="Vibrate on button presses and actions"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_device"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

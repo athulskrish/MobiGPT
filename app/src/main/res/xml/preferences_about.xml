@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        android:title="💬 Contact &amp; Feedback"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="contact_support"
+            android:title="Contact Support"
+            android:summary="info@keralatechreach.in"
+            android:icon="@drawable/ic_support"
+            app:iconSpaceReserved="true" />
+
+        <Preference
+            android:key="send_feedback"
+            android:title="Send Feedback"
+            android:summary="info@keralatechreach.in"
+            android:icon="@drawable/ic_feedback"
+            app:iconSpaceReserved="true" />
+
+        <Preference
+            android:key="rate_app"
+            android:title="Rate This App"
+            android:summary="Help us by rating on Play Store"
+            android:icon="@drawable/ic_star"
+            app:iconSpaceReserved="true" />
+
+        <Preference
+            android:key="share_app"
+            android:title="Share App"
+            android:summary="Share with friends and family"
+            android:icon="@drawable/ic_share"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="👨‍💻 Developer"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="developer_name"
+            android:title="Developer"
+            android:summary="Kerala Tech Reach"
+            android:icon="@drawable/ic_developer"
+            android:selectable="false"
+            app:iconSpaceReserved="true" />
+
+        <Preference
+            android:key="website"
+            android:title="Website"
+            android:summary="www.keralatechreach.com"
+            android:icon="@drawable/ic_web"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

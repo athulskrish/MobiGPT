@@ -1,0 +1,44 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Standard settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Kotlin & Gradle Kotlin DSL
+[*.{kt,kts}]
+indent_size = 4
+indent_style = space
+ij_kotlin_allow_trailing_comma = false
+ij_kotlin_allow_trailing_comma_on_call_site = false
+
+# XML & JSON
+[*.{xml,json}]
+indent_size = 4
+indent_style = space
+
+# Markdown
+[*.{md,MD}]
+trim_trailing_whitespace = false
+
+# Gradle Groovy scripts
+[*.{gradle,groovy}]
+indent_size = 4
+indent_style = space
+
+# Native C/C++ source files
+[*.{c,cpp,h,hpp}]
+indent_size = 4
+indent_style = space
+
+# TOML configuration
+[*.toml]
+indent_size = 2
+indent_style = space

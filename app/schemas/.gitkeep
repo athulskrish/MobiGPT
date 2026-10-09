@@ -1,0 +1,9 @@
+# Room Database Schema Directory
+
+This directory contains auto-generated schema JSON files for each database version.
+These files are important for:
+- Tracking schema changes over time
+- Validating migrations
+- Understanding database structure
+
+Schema files will be automatically generated during compilation.

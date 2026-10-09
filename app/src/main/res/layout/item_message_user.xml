@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_message_user_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:id="@+id/message_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/user_message_background"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintWidth_min="100dp">
+
+        <!-- Selection indicator -->
+        <ImageView
+            android:id="@+id/selection_indicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="4dp"
+            android:src="@android:drawable/checkbox_on_background"
+            app:tint="@android:color/white"
+            android:visibility="gone"
+            android:contentDescription="@string/selected"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:lineSpacingExtra="3dp"
+            android:scrollHorizontally="false"
+            android:breakStrategy="balanced"
+            android:hyphenationFrequency="normal"
+            android:letterSpacing="0.01"
+            android:textIsSelectable="true"
+            android:contentDescription="@string/user_message"
+            android:importantForAccessibility="yes"
+            tools:text="Sample user message that might be quite long to test the maximum width constraint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|end">
+
+            <ImageView
+                android:id="@+id/star_indicator"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="4dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_star_filled"
+                app:tint="@android:color/white"
+                android:visibility="gone"
+                android:contentDescription="@string/starred_message"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/text_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_sm"
+                android:alpha="0.85"
+                android:contentDescription="@string/message_timestamp"
+                tools:text="12:30 PM" />
+
+            <!-- Quick Copy Button -->
+            <ImageButton
+                android:id="@+id/btn_quick_copy"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/action_copy"
+                android:padding="7dp"
+                android:src="@drawable/ic_copy"
+                app:tint="@android:color/white"
+                android:alpha="0.9" />
+
+            <!-- Quick Star Button -->
+            <ImageButton
+                android:id="@+id/btn_star_toggle"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/star_message"
+                android:padding="7dp"
+                android:src="@drawable/ic_star_outline"
+                app:tint="@android:color/white"
+                android:alpha="0.9" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

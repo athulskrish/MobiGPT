@@ -1,0 +1,47 @@
+<resources>
+    <!-- Dark theme configuration -->
+    <style name="Base.Theme.MobiGPT" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary colors remain same for brand consistency -->
+        <item name="colorPrimary">#25D366</item>
+        <item name="colorPrimaryVariant">#128C7E</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">#34B7F1</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorSecondaryContainer">@color/bottom_nav_indicator</item>
+        <item name="colorOnSecondaryContainer">#34D399</item>
+        
+        <!-- Dark theme semantic colors -->
+        <item name="userMessageBackground">@color/user_message_bg_dark</item>
+        <item name="aiMessageBackground">@color/ai_message_bg_dark</item>
+        <item name="messageInputBackground">@color/message_input_bg_dark</item>
+        <item name="chatBackground">@color/chat_bg_dark</item>
+        <item name="surfaceColor">@color/surface_dark</item>
+        <item name="textColorPrimary">@color/text_primary_dark</item>
+        <item name="textColorSecondary">@color/text_secondary_dark</item>
+        <item name="borderColor">@color/border_dark</item>
+        <item name="dividerColor">@color/border_dark</item>
+        <item name="spinnerBackground">@color/spinner_bg_dark</item>
+        <item name="downloadProgressBackground">@color/download_progress_bg_dark</item>
+        
+        <!-- System Bar Theming -->
+        <item name="android:statusBarColor">@color/surface_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/surface_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        
+        <!-- Material3 dark theme overrides -->
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        
+        <!-- Popup and overflow menu styling for dark theme -->
+        <item name="popupMenuStyle">@style/Widget.App.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.App.PopupMenu.Overflow</item>
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorSecondary">@color/text_secondary_dark</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance.App.Menu</item>
+        
+        <!-- Preference styling -->
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.Material3</item>
+    </style>
+</resources>

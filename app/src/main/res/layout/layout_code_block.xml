@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/code_block_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/code_block_container_background">
+
+    <!-- Header bar with language label and Copy button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/code_block_header_background"
+        android:paddingStart="12dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:id="@+id/text_code_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CODE"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_secondary_dark"
+            android:letterSpacing="0.06" />
+
+        <LinearLayout
+            android:id="@+id/btn_copy_code_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/icon_copy_code_block"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_copy"
+                app:tint="@color/text_secondary_dark"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Copy code" />
+
+            <TextView
+                android:id="@+id/text_copy_code_block"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary_dark" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Horizontal scrollable code body -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:overScrollMode="never"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/text_code_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textSize="13sp"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/code_text_dark"
+            android:textIsSelectable="true" />
+
+    </HorizontalScrollView>
+
+</LinearLayout>

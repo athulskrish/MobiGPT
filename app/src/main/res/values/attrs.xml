@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom theme attributes for day/night support -->
+    <attr name="userMessageBackground" format="color|reference" />
+    <attr name="aiMessageBackground" format="color|reference" />
+    <attr name="messageInputBackground" format="color|reference" />
+    <attr name="chatBackground" format="color|reference" />
+    <attr name="surfaceColor" format="color|reference" />
+    <attr name="textColorPrimary" format="color|reference" />
+    <attr name="textColorSecondary" format="color|reference" />
+    <attr name="borderColor" format="color|reference" />
+    <attr name="dividerColor" format="color|reference" />
+    <attr name="spinnerBackground" format="color|reference" />
+    <attr name="downloadProgressBackground" format="color|reference" />
+</resources>

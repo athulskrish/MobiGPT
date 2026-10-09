@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme markdown colors -->
+    <color name="code_background">#374151</color>
+    <color name="code_text">#34D399</color>
+    <color name="header_text">#F9FAFB</color>
+
+    <color name="star_color">#F59E0B</color>
+    <color name="star_background_light">#1F2937</color>
+    
+    <!-- Settings UI colors for dark theme -->
+    <color name="settings_icon_tint">#FFFFFF</color>
+    <color name="settings_category_accent">#34D399</color>
+    <color name="settings_divider">#374151</color>
+    <color name="settings_ripple">#2034D399</color>
+    
+    <!-- Bottom Navigation Active Indicator for Dark Theme -->
+    <color name="bottom_nav_indicator">#1E3A2F</color>
+    <color name="bottom_nav_indicator_light">#1E3A2F</color>
+    
+    <!-- Use dark theme colors by default in night mode -->
+    <color name="user_message_bg">@color/user_message_bg_dark</color>
+    <color name="ai_message_bg">@color/ai_message_bg_dark</color>
+    <color name="message_input_bg">@color/message_input_bg_dark</color>
+    <color name="chat_bg">@color/chat_bg_dark</color>
+    <color name="text_primary">@color/text_primary_dark</color>
+    <color name="text_secondary">@color/text_secondary_dark</color>
+</resources>

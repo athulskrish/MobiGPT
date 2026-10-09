@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <!-- Share selected messages (only visible in selection mode) -->
+    <item
+        android:id="@+id/action_share_selected"
+        android:title="Share"
+        android:icon="@drawable/ic_share"
+        android:visible="false"
+        android:iconTint="?attr/textColorPrimary"
+        app:showAsAction="always"
+        app:iconTint="?attr/textColorPrimary" />
+    
+    <!-- Search item -->
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        android:iconTint="?attr/textColorPrimary"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:iconTint="?attr/textColorPrimary" />
+    
+    <!-- Starred messages -->
+    <item
+        android:id="@+id/action_starred_messages"
+        android:title="Starred Messages"
+        android:icon="@drawable/ic_star_filled"
+        app:showAsAction="never" />
+    
+    <!-- Download model from URL -->
+    <item
+        android:id="@+id/action_download_from_url"
+        android:title="Download Model from URL"
+        android:icon="@drawable/ic_download"
+        app:showAsAction="never" />
+    
+    <!-- Export conversation -->
+    <item
+        android:id="@+id/action_export"
+        android:title="@string/export_conversation"
+        android:icon="@drawable/ic_export"
+        app:showAsAction="never" />
+    
+    <!-- Settings -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="never" />
+    
+</menu>

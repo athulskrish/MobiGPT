@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing system -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+
+    <!-- Touch targets (minimum 48dp for accessibility) -->
+    <dimen name="touch_target_min">48dp</dimen>
+    <dimen name="touch_target_comfortable">56dp</dimen>
+    
+    <!-- Icon sizes with proper touch targets -->
+    <dimen name="icon_size_small">20dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    
+    <!-- Button sizes -->
+    <dimen name="button_height_standard">48dp</dimen>
+    <dimen name="button_height_large">56dp</dimen>
+    <dimen name="button_min_width">88dp</dimen>
+    
+    <!-- Corner radius -->
+    <dimen name="radius_xs">4dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">16dp</dimen>
+    <dimen name="radius_lg">20dp</dimen>
+    <dimen name="radius_xl">24dp</dimen>
+    <dimen name="radius_round">50dp</dimen>
+    
+    <!-- Elevation -->
+    <dimen name="elevation_none">0dp</dimen>
+    <dimen name="elevation_sm">1dp</dimen>
+    <dimen name="elevation_md">2dp</dimen>
+    <dimen name="elevation_lg">4dp</dimen>
+    <dimen name="elevation_xl">6dp</dimen>
+    <dimen name="elevation_card">2dp</dimen>
+    <dimen name="elevation_fab">6dp</dimen>
+    <dimen name="elevation_dialog">8dp</dimen>
+    <dimen name="elevation_message_user">4dp</dimen>
+    <dimen name="elevation_message_ai">2dp</dimen>
+    
+    <!-- Message bubbles -->
+    <dimen name="message_padding">14dp</dimen>
+    <dimen name="message_margin_vertical">4dp</dimen>
+    <dimen name="message_margin_horizontal">12dp</dimen>
+    <dimen name="message_max_width_percent">0.75</dimen>
+    
+    <!-- Text sizes -->
+    <dimen name="text_xs">10sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_base">14sp</dimen>
+    <dimen name="text_md">15sp</dimen>
+    <dimen name="text_lg">16sp</dimen>
+    <dimen name="text_xl">18sp</dimen>
+    <dimen name="text_xxl">20sp</dimen>
+    <dimen name="text_title">24sp</dimen>
+    
+    <!-- Line spacing -->
+    <dimen name="line_spacing_extra_tight">2dp</dimen>
+    <dimen name="line_spacing_extra_normal">3dp</dimen>
+    <dimen name="line_spacing_extra_relaxed">4dp</dimen>
+    
+    <!-- Padding for touch targets (to ensure 48dp minimum) -->
+    <dimen name="padding_touch_target">14dp</dimen>
+</resources>

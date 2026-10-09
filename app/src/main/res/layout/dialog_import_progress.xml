@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="22dp"
+    android:background="?attr/surfaceColor">
+
+    <!-- Top Icon & Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/model_icon_container_background">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_device"
+                app:tint="?attr/colorPrimary"
+                android:contentDescription="Importing" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Importing Local Model"
+                android:textSize="16.5sp"
+                android:textStyle="bold"
+                android:textColor="?attr/textColorPrimary" />
+
+            <TextView
+                android:id="@+id/text_import_filename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                tools:text="qwen2.5-coder-1.5b-instruct-q4_k_m.gguf"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:singleLine="true"
+                android:ellipsize="middle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progress_import"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginBottom="8dp"
+        android:progressDrawable="@drawable/progress_bar_gradient"
+        android:max="100"
+        android:progress="0" />
+
+    <!-- Progress details (MB copied and %) -->
+    <TextView
+        android:id="@+id/text_import_progress_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preparing file transfer..."
+        android:textSize="12sp"
+        android:textColor="?attr/textColorSecondary"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Cancel button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel_import"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Cancel"
+            android:textColor="?attr/textColorSecondary"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

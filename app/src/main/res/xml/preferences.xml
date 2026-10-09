@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Personalization -->
+    <PreferenceCategory
+        android:title="Personalization"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="appearance_settings"
+            android:title="Appearance"
+            android:summary="Themes, colors, fonts, and visual styles"
+            android:icon="@drawable/ic_palette"
+            app:iconSpaceReserved="true"
+            android:singleLineTitle="false" />
+
+    </PreferenceCategory>
+
+    <!-- Core Features -->
+    <PreferenceCategory
+        android:title="Core Features"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="chat_settings"
+            android:title="Chat"
+            android:summary="Message history, auto-delete, and conversation settings"
+            android:icon="@drawable/ic_chat"
+            app:iconSpaceReserved="true"
+            android:singleLineTitle="false" />
+
+        <Preference
+            android:key="downloads_settings"
+            android:title="Downloads &amp; Storage"
+            android:summary="Model downloads, WiFi settings, and storage management"
+            android:icon="@drawable/ic_download"
+            app:iconSpaceReserved="true"
+            android:singleLineTitle="false" />
+
+    </PreferenceCategory>
+
+    <!-- Privacy & Security -->
+    <PreferenceCategory
+        android:title="Privacy &amp; Security"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="security_settings"
+            android:title="Security"
+            android:summary="App lock, biometric authentication, and screen security"
+            android:icon="@drawable/ic_shield"
+            app:iconSpaceReserved="true"
+            android:singleLineTitle="false" />
+
+        <Preference
+            android:key="data_privacy_settings"
+            android:title="Data &amp; Privacy"
+            android:summary="Export conversations, backups, and data management"
+            android:icon="@drawable/ic_database"
+            app:iconSpaceReserved="true"
+            android:singleLineTitle="false" />
+
+    </PreferenceCategory>
+
+    <!-- About & Help -->
+    <PreferenceCategory
+        android:title="About &amp; Help"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="about_settings"
+            android:title="About"
+            android:summary="App info, version, licenses, and support"
+            android:icon="@drawable/ic_info"
+            app:iconSpaceReserved="true"
+            android:singleLineTitle="false" />
+
+        <Preference
+            android:key="restore_defaults"
+            android:title="Restore Default Settings"
+            android:summary="Reset all settings to their original defaults"
+            android:icon="@drawable/ic_reset"
+            app:iconSpaceReserved="true"
+            android:singleLineTitle="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

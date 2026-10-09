@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Outer glow circle -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M60,15 A45,45 0 1,1 60,105 A45,45 0 1,1 60,15 Z"/>
+    
+    <!-- Main success circle -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M60,25 A35,35 0 1,1 60,95 A35,35 0 1,1 60,25 Z"/>
+    
+    <!-- Checkmark -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M42,60 L54,72 L78,45"/>
+    
+    <!-- Rocket icon for "ready to launch" -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M85,20 L90,15 L95,20 L92,30 L88,30 Z"/>
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M88,30 L82,35 L85,32 L88,30 L92,30 L95,32 L98,35 Z"/>
+    
+    <!-- Sparkle effects -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M20,35 L22,40 L27,42 L22,44 L20,49 L18,44 L13,42 L18,40 Z"/>
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M100,50 L102,55 L107,57 L102,59 L100,64 L98,59 L93,57 L98,55 Z"/>
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M25,90 L27,95 L32,97 L27,99 L25,104 L23,99 L18,97 L23,95 Z"/>
+    
+    <!-- Small success indicators -->
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M105,75 A4,4 0 1,1 105,83 A4,4 0 1,1 105,75 Z"/>
+    <path
+        android:fillColor="#66BB6A"
+        android:pathData="M15,70 A4,4 0 1,1 15,78 A4,4 0 1,1 15,70 Z"/>
+</vector>

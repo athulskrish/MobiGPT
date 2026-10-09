@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Shield background - representing security/privacy -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M60,15 L85,25 L85,50 Q85,70 60,85 Q35,70 35,50 L35,25 Z"/>
+    
+    <!-- Shield outline -->
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2.5"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M60,15 L85,25 L85,50 Q85,70 60,85 Q35,70 35,50 L35,25 Z"/>
+    
+    <!-- Lock icon inside shield -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M52,45 L52,40 Q52,35 60,35 Q68,35 68,40 L68,45 Z"/>
+    
+    <!-- Lock body -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M48,45 L72,45 L72,62 Q72,65 69,65 L51,65 Q48,65 48,62 Z"/>
+    
+    <!-- Lock keyhole -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,50 A3,3 0 1,1 60,56 L60,59 L60,56 A3,3 0 1,1 60,50 Z"/>
+    
+    <!-- Decorative sparkles -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M25,35 L27,40 L32,42 L27,44 L25,49 L23,44 L18,42 L23,40 Z"/>
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M90,55 L92,60 L97,62 L92,64 L90,69 L88,64 L83,62 L88,60 Z"/>
+</vector>

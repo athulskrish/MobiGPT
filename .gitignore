@@ -1,0 +1,42 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Build outputs
+/app/build/
+/app/release/
+/app/device/
+*.aab
+*.apk
+
+
+# Temporary files
+/temp/
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# Google Services / Secrets
+google-services.json
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+
+# OS files
+Thumbs.db
+Desktop.ini

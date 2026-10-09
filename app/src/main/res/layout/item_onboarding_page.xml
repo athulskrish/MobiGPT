@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- Onboarding Image -->
+    <ImageView
+        android:id="@+id/onboarding_image"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/onboarding_image"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_foreground" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/onboarding_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/hammersmith_one"
+        android:gravity="center"
+        android:letterSpacing="0.01"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_image"
+        tools:text="Welcome to MobiGPT" />
+
+    <!-- Description in ScrollView to handle long content -->
+    <ScrollView
+        android:id="@+id/onboarding_description_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_title">
+
+        <TextView
+            android:id="@+id/onboarding_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.87"
+            android:gravity="start"
+            android:lineSpacingExtra="6dp"
+            android:textAlignment="viewStart"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="16sp"
+            tools:text="Your personal AI assistant running entirely on your device." />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

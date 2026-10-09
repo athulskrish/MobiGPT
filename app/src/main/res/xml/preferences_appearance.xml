@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        android:title="🎨 Theme"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="theme_mode"
+            android:title="App Theme"
+            android:summary="%s"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="system"
+            android:icon="@drawable/ic_palette"
+            app:iconSpaceReserved="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:key="accent_color"
+            android:title="Theme Color"
+            android:summary="%s"
+            android:entries="@array/accent_color_entries"
+            android:entryValues="@array/accent_color_values"
+            android:defaultValue="green"
+            android:icon="@drawable/ic_color_palette"
+            app:iconSpaceReserved="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            android:key="oled_black_theme"
+            android:title="OLED Black Theme"
+            android:summary="Pure black for dark mode (saves battery on OLED screens)"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_palette"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="📝 Typography"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="font_size"
+            android:title="Font Size"
+            android:summary="%s"
+            android:entries="@array/font_size_entries"
+            android:entryValues="@array/font_size_values"
+            android:defaultValue="medium"
+            android:icon="@drawable/ic_text_length"
+            app:iconSpaceReserved="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:key="font_family"
+            android:title="Font Family"
+            android:summary="%s"
+            android:entries="@array/font_family_entries"
+            android:entryValues="@array/font_family_values"
+            android:defaultValue="system"
+            android:icon="@drawable/ic_text_length"
+            app:iconSpaceReserved="true"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            android:key="monospace_code"
+            android:title="Monospace Code Font"
+            android:summary="Use monospace font for code blocks"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_code"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="⚙️ Advanced"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="show_token_count"
+            android:title="Show Token Count"
+            android:summary="Display token usage statistics for messages"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_analytics"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

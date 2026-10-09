@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lock_screen_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="?attr/colorSurface">
+    
+    <!-- Lock Icon -->
+    <ImageView
+        android:id="@+id/lock_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_lock"
+        app:tint="?attr/colorPrimary"
+        android:contentDescription="@string/lock_icon" />
+    
+    <!-- Title -->
+    <TextView
+        android:id="@+id/lock_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="8dp" />
+    
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/lock_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_pin_to_unlock"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:layout_marginBottom="32dp" />
+    
+    <!-- PIN Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pin_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:hintTextColor="?attr/colorPrimary"
+        app:errorEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pin_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_pin"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textSize="18sp"
+            android:paddingVertical="16dp" />
+    
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <!-- Unlock Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/unlock_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/unlock"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.Button" />
+    
+    <!-- Use Biometric Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/use_biometric_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/use_biometric"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/ic_fingerprint"
+        app:iconGravity="textStart"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+</LinearLayout>

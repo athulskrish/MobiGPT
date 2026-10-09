@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green_700">#10B981</color>
+    <!-- Primary colors - Modern gradient-friendly palette -->
+    <color name="primary_green">#10B981</color>
+    <color name="primary_dark">#059669</color>
+    <color name="primary_light">#34D399</color>
+    <color name="secondary_blue">#3B82F6</color>
+    <color name="secondary_purple">#8B5CF6</color>
+    <color name="accent_orange">#F59E0B</color>
+    <color name="accent_pink">#EC4899</color>
+    
+    <!-- Accent Color Palette -->
+    <color name="accent_green">#10B981</color>
+    <color name="accent_green_dark">#059669</color>
+    <color name="accent_green_light">#34D399</color>
+    
+    <!-- Bottom Navigation Active Indicator -->
+    <color name="bottom_nav_indicator">#D1FAE5</color>
+    <color name="bottom_nav_indicator_light">#D1FAE5</color>
+    
+    <color name="accent_blue">#3B82F6</color>
+    <color name="accent_blue_dark">#2563EB</color>
+    <color name="accent_blue_light">#60A5FA</color>
+    
+    <color name="accent_purple">#8B5CF6</color>
+    <color name="accent_purple_dark">#7C3AED</color>
+    <color name="accent_purple_light">#A78BFA</color>
+    
+    <color name="accent_orange_primary">#F59E0B</color>
+    <color name="accent_orange_dark">#D97706</color>
+    <color name="accent_orange_light">#FBBF24</color>
+    
+    <color name="accent_pink_primary">#EC4899</color>
+    <color name="accent_pink_dark">#DB2777</color>
+    <color name="accent_pink_light">#F472B6</color>
+    
+    <!-- Light theme colors - Enhanced with better contrast -->
+    <color name="user_message_bg_light">#10B981</color>
+    <color name="ai_message_bg_light">#F9FAFB</color>
+    <color name="message_input_bg_light">#F3F4F6</color>
+    <color name="chat_bg_light">#FFFFFF</color>
+    <color name="text_primary_light">#111827</color>
+    <color name="text_secondary_light">#6B7280</color>
+    <color name="text_on_primary_light">#FFFFFF</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="background_light">#F9FAFB</color>
+    <color name="border_light">#E5E7EB</color>
+    <color name="spinner_bg_light">#FFFFFF</color>
+    <color name="download_progress_bg_light">#F3F4F6</color>
+    <color name="chat_history_hover_light">#F3F4F6</color>
+    
+    <!-- Dark theme colors - Enhanced for OLED and better readability -->
+    <color name="user_message_bg_dark">#059669</color>
+    <color name="ai_message_bg_dark">#1F2937</color>
+    <color name="message_input_bg_dark">#374151</color>
+    <color name="chat_bg_dark">#111827</color>
+    <color name="text_primary_dark">#F9FAFB</color>
+    <color name="text_secondary_dark">#9CA3AF</color>
+    <color name="text_on_primary_dark">#FFFFFF</color>
+    <color name="surface_dark">#1F2937</color>
+    <color name="background_dark">#111827</color>
+    <color name="border_dark">#374151</color>
+    <color name="spinner_bg_dark">#1F2937</color>
+    <color name="download_progress_bg_dark">#1F2937</color>
+    <color name="chat_history_hover_dark">#374151</color>
+    
+    <!-- OLED Black Theme - Pure black for battery saving on OLED screens -->
+    <color name="oled_black">#000000</color>
+    <color name="oled_surface">#0A0A0A</color>
+    <color name="oled_surface_elevated">#141414</color>
+    <color name="oled_border">#1F1F1F</color>
+    <color name="oled_text_primary">#FFFFFF</color>
+    <color name="oled_text_secondary">#B3B3B3</color>
+    
+    <!-- OLED Message Backgrounds -->
+    <color name="oled_user_message_bg">#059669</color>
+    <color name="oled_ai_message_bg">#0A0A0A</color>
+    <color name="oled_message_input_bg">#141414</color>
+    
+    <!-- Settings UI colors -->
+    <color name="settings_category_accent">#10B981</color>
+    <color name="settings_icon_tint">#059669</color>
+    <color name="settings_divider">#E5E7EB</color>
+    <color name="settings_divider_light">#E5E7EB</color>
+    <color name="settings_divider_dark">#374151</color>
+    <color name="settings_ripple">#1010B981</color>
+    <color name="settings_ripple_light">#1010B981</color>
+    <color name="settings_ripple_dark">#2034D399</color>
+    
+    <!-- Markdown formatting colors -->
+    <color name="code_background">#F3F4F6</color>
+    <color name="code_text">#059669</color>
+    <color name="header_text">#1F2937</color>
+    
+    <!-- Dark theme markdown colors -->
+    <color name="code_background_dark">#374151</color>
+    <color name="code_text_dark">#34D399</color>
+    <color name="header_text_dark">#F9FAFB</color>
+    
+    <!-- Star and favorites colors -->
+    <color name="star_color">#F59E0B</color>
+    <color name="star_color_light">#FBBF24</color>
+    <color name="star_color_dark">#D97706</color>
+    <color name="star_background_light">#FFF9E5</color>
+    
+    <!-- Status colors for UI feedback -->
+    <color name="success_green">#10B981</color>
+    <color name="warning_orange">#F59E0B</color>
+    <color name="error_red">#EF4444</color>
+    <color name="info_blue">#3B82F6</color>
+    
+    <!-- Tutorial/Showcase colors -->
+    <color name="tutorial_outer_circle">#10B981</color>
+    <color name="tutorial_highlight">#34D399</color>
+    
+    <!-- Legacy mappings (deprecated - use semantic colors) -->
+    <color name="user_message_bg">#25D366</color>
+    <color name="ai_message_bg">#FFFFFF</color>
+    <color name="message_input_bg">#E8F5E8</color>
+    <color name="chat_bg">#F5F5F5</color>
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_on_primary">#FFFFFF</color>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        android:title="📶 Network Settings"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="wifi_only_downloads"
+            android:title="WiFi Only Downloads"
+            android:summary="Download models only when connected to WiFi"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_wifi"
+            app:iconSpaceReserved="true" />
+
+        <SwitchPreferenceCompat
+            android:key="auto_download_updates"
+            android:title="Auto-download Updates"
+            android:summary="Automatically download model updates on WiFi"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_update"
+            android:dependency="wifi_only_downloads"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="🔔 Notifications"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="download_notifications"
+            android:title="Download Notifications"
+            android:summary="Show notifications for download progress"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_notifications"
+            app:iconSpaceReserved="true" />
+
+        <SwitchPreferenceCompat
+            android:key="download_complete_sound"
+            android:title="Download Complete Sound"
+            android:summary="Play sound when download finishes"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_notifications"
+            android:dependency="download_notifications"
+            app:iconSpaceReserved="true" />
+
+        <SwitchPreferenceCompat
+            android:key="download_progress_notification"
+            android:title="Show Progress Percentage"
+            android:summary="Display download progress in notification"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_analytics"
+            android:dependency="download_notifications"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="💾 Storage Management"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="clear_cache"
+            android:title="Clear Cache"
+            android:summary="Free up space by removing temporary files"
+            android:icon="@drawable/ic_delete"
+            app:iconSpaceReserved="true" />
+
+        <Preference
+            android:key="storage_usage"
+            android:title="Storage Usage"
+            android:summary="View detailed storage breakdown"
+            android:icon="@drawable/ic_storage"
+            app:iconSpaceReserved="true" />
+
+        <SwitchPreferenceCompat
+            android:key="low_storage_warning"
+            android:title="Low Storage Warning"
+            android:summary="Alert when device storage is running low"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_info"
+            app:iconSpaceReserved="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

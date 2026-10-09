@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_chat_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="2dp"
+    android:background="@drawable/m3_chat_item_background"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingEnd="4dp"
+    android:paddingTop="9dp"
+    android:paddingBottom="9dp"
+    android:gravity="center_vertical"
+    android:minHeight="52dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:contentDescription="Chat history item">
+
+    <!-- Chat icon with subtle container -->
+    <FrameLayout
+        android:id="@+id/chat_icon_frame"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/chat_icon_background">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_history_chat"
+            android:contentDescription="Chat icon"
+            app:tint="@android:color/white" />
+
+    </FrameLayout>
+
+    <!-- Chat Title and Subtitle Info (Full Width) -->
+    <LinearLayout
+        android:id="@+id/layout_chat_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_chat_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat Title"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="13.5sp"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:importantForAccessibility="yes" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:src="@android:drawable/ic_menu_recent_history"
+                android:layout_marginEnd="4dp"
+                android:alpha="0.4"
+                app:tint="?attr/textColorSecondary"
+                android:contentDescription="Clock icon" />
+
+            <TextView
+                android:id="@+id/text_last_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 hours ago"
+                android:textColor="?attr/textColorSecondary"
+                android:textSize="11sp"
+                android:alpha="0.7"
+                android:contentDescription="Last message time"
+                android:importantForAccessibility="yes" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Context Actions (3-Dot Overflow Menu) -->
+    <ImageButton
+        android:id="@+id/btn_chat_more"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_more_vert"
+        android:contentDescription="Conversation options"
+        android:padding="7dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="?attr/textColorSecondary"
+        android:alpha="0.55"
+        android:importantForAccessibility="yes" />
+
+</LinearLayout>

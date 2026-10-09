@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <!-- Dialog Icon -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_download"
+            app:tint="?attr/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/download_icon" />
+        
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/download_model_from_url"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textColorPrimary"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+        
+        <!-- Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/download_custom_gguf_desc"
+            android:textSize="14sp"
+            android:textColor="?attr/textColorSecondary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+        
+        <!-- Browse Hugging Face Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_browse_huggingface"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/browse_huggingface_models"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:cornerRadius="12dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="?attr/colorAccent"
+            android:layout_marginBottom="16dp" />
+        
+        <!-- Divider with OR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="16dp">
+            
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?attr/borderColor" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or_divider"
+                android:textSize="12sp"
+                android:textColor="?attr/textColorSecondary"
+                android:paddingHorizontal="16dp" />
+            
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?attr/borderColor" />
+            
+        </LinearLayout>
+        
+        <!-- Model Name Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_model_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/model_name_hint"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:startIconDrawable="@drawable/ic_label"
+            app:startIconTint="?attr/colorAccent"
+            android:layout_marginBottom="16dp">
+            
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_model_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="16sp" />
+            
+        </com.google.android.material.textfield.TextInputLayout>
+        
+        <!-- Download URL Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_url"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/download_url_hint"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:startIconDrawable="@drawable/ic_link"
+            app:startIconTint="?attr/colorPrimary"
+            app:endIconMode="clear_text"
+            android:layout_marginBottom="6dp">
+            
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textUri"
+                android:maxLines="3"
+                android:textSize="14sp" />
+            
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Quick Paste Action & Auto-fix indicator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/btn_paste_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📋 Paste from Clipboard"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                android:paddingStart="4dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/text_url_helper_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto-fixes /blob/ links"
+                android:textSize="11sp"
+                android:textColor="?attr/textColorSecondary" />
+
+        </LinearLayout>
+        
+        <!-- Info Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="?attr/surfaceColor"
+            app:strokeWidth="1dp"
+            app:strokeColor="?attr/borderColor"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="8dp">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/important_information"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorAccent"
+                    android:layout_marginBottom="8dp" />
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/custom_download_info_text"
+                    android:textSize="13sp"
+                    android:textColor="?attr/textColorSecondary"
+                    android:lineSpacingExtra="4dp" />
+                
+            </LinearLayout>
+            
+        </com.google.android.material.card.MaterialCardView>
+        
+        <!-- Example URL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_download_example_url"
+            android:textSize="11sp"
+            android:textColor="?attr/textColorSecondary"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp" />
+        
+    </LinearLayout>
+    
+</ScrollView>
